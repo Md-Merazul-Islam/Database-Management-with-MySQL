@@ -121,7 +121,6 @@ Passport Table:
 |------------|----------------|------------|------------------------|
 | 101        | ABC123         | 2025-12-31 | 1                      |
 | 102        | XYZ456         | 2024-10-15 | 2                      |
-In this example, each person in the Person table has a corresponding passport in the Passport table. The PersonID column in the Passport table serves as a foreign key referencing the PersonID primary key in the Person table.
 
 
 
@@ -148,7 +147,6 @@ Employee Table:
 | 101        | John     | 30  | 1                          |
 | 102        | Alice    | 25  | 2                          |
 | 103        | Bob      | 28  | 1                          |
-In this example, each department in the Department table can have multiple employees associated with it. The DepartmentID column in the Employee table serves as a foreign key referencing the DeptID primary key in the Department table.
 
 
 
@@ -184,4 +182,54 @@ Enrollment Table:
 | 2            | 1                        | 102                    |
 | 3            | 2                        | 101                    |
 | 4            | 3                        | 103                    |
-In this example, the Enrollment table acts as a junction table linking students with courses. Each row in the Enrollment table represents a student enrolled in a course, and it contains foreign keys referencing both the Student and Course tables.
+
+
+
+Query -এটা হলো এমন একটা কাজ, যেটা আমরা ডাটাবেজে ডাটা খোজার জন্য করে থাকি। কোয়েরি এর মাধ্যমে আমরা ডাটার বিভিন্ন পরিবর্তন করতে পারি. যেমন: ubdate ,delete,add ইত্যাদি করতে পারি .
+
+SELECT Query ঃ এটা শুধু ডাটা নিয়ে আসে ।
+Parameter Query ঃ প্যারাম টা ইউজ করে খুঁজে নিয়ে আসে ডাটাকে।
+CrossTab query ঃ যে ধরনের কোয়ারি ডাটাকে গ্রুপ বা সামারি আকারে প্রকাশ করে তাকে বলে
+Unmatch : যেগুলো ম্যাচ করবে না সেইরকম ডাটা দেখাবে এই query
+Action : ডাটা বেজে টেবিল ক্রিয়েট, আপডেট,ডিলিট, অ্যাপেন্ট ইত্যাদি কাজ করার জন্যই  ব্যবহার করা হয়.
+
+
+DML- select,insert,ubdate,delete এই কাজ গুলাকেই DML বলে।
+DDL- Create,append,drop .এইখানে structure গত change হবে। 
+
+studentCREATE DATABASE hello;                                                   
+USE hello;                                                                      
+                                                                                
+CREATE TABLE IF NOT EXISTS student (                                            
+    Roll CHAR(4) PRIMARY KEY,                                                   
+    Name VARCHAR(50),                                                          
+    Marks DOUBLE                                                                
+);                                                                              
+# https://www.educba.com/mysql-dml/
+INSERT INTO student (Roll, Name, Marks) VALUES ('1', 'Meraz', 20);              
+INSERT INTO student (Roll, Name, Marks) VALUES ('2', 'AKSH', 10);               
+                                                                              
+SET SQL_SAFE_UPDATES=0;                                                        
+UPDATE student                                                                 
+SET Name = 'MD MERAZUL ISLAM'                                                   |
+WHERE Roll = 2;                                                                
+SET SQL_SAFE_UPDATES=1;                                                         
+                                                                                
+SET SQL_SAFE_UPDATES=0;                                                        
+DELETE FROM student                                                             
+WHERE Roll = 2;                                                                
+SET SQL_SAFE_UPDATES =1;                                                        
+
+
+
+
+
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/e8191c7d-c42b-4997-8f12-6eab0a80a623)
+
+
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/a3ff3d0a-5d4d-4d98-970e-ea6bef47a3ed)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/32f8fcce-5e0d-4a46-88ec-31f98445a340)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/75999a82-7bd4-4d9f-88af-973e4d8cd30d)
+
+
+
