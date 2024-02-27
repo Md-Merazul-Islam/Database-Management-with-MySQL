@@ -1,0 +1,43 @@
+SQL queries along with examples:
+
+SELECT: Retrieves data from one or more tables.
+SELECT * FROM table_name;
+
+INSERT: Adds new records to a table.
+INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
+
+UPDATE: Modifies existing records in a table.
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+
+DELETE: Removes records from a table.
+DELETE FROM table_name WHERE condition;
+
+CREATE TABLE: Creates a new table.
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
+
+ALTER TABLE: Modifies an existing table (e.g., add, modify, or drop columns).
+ALTER TABLE table_name ADD column_name datatype;
+
+DROP TABLE: Deletes an existing table.
+DROP TABLE table_name;
+
+SELECT DISTINCT: Retrieves unique values from a column.
+SELECT DISTINCT column_name FROM table_name;
+SELECT WHERE: Filters rows based on a condition.
+
+SELECT * FROM table_name WHERE condition;
+SELECT ORDER BY: Sorts the result set.
+
+
+SELECT * FROM table_name ORDER BY column_name;
+SELECT LIMIT: Limits the number of rows returned.
+
+SELECT * FROM table_name LIMIT 10;
+SELECT GROUP BY: Groups rows that have the same values into summary rows.
+
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
+

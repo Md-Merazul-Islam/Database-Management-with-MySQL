@@ -1,0 +1,50 @@
+USE SCHOOL;
+
+
+CREATE TABLE Student(
+	Roll CHAR(2) ,
+    Name VARCHAR(30),
+    Eamil VARCHAR(50),
+    Address VARCHAR(100),
+	Age INT CHECK(Age>10)
+);
+
+
+-- way:01-- 
+CREATE TABLE Student(
+	Roll CHAR(2) PRIMARY KEY,
+    Name VARCHAR(30) NOT NULL,
+    Eamil VARCHAR(50) UNIQUE,
+    Address VARCHAR(100),
+	Age INT CHECK(Age>10)
+);
+
+-- Way:02--
+CREATE TABLE Student(
+	Roll CHAR(2) ,
+    Name VARCHAR(30),
+    Eamil VARCHAR(50),
+    Address VARCHAR(100),
+	Age INT,
+    PRIMARY KEY(Roll),
+    UNIQUE (Email),
+	CHECK (Age >10)
+);
+-- way:03--
+CREATE TABLE Student(
+	Roll CHAR(2) ,
+    Name VARCHAR(30),
+    Eamil VARCHAR(50),
+    Address VARCHAR(100),
+	Age INT, 
+	CONSTRAINT pk_rule PRIMARY KEY(Roll),
+	CONSTRAINT unique_rule	UNIQUE (Email),
+	CONSTRAINT checking_rule CHECK (Age >10)
+);
+
+
+CREATE TABLE Library(
+	BookName VARCHAR(50) PRIMARY KEY,
+    WhoHired_Roll CHAR(4),
+    FOREIGN KEY (WhoHired_Roll) REFERENCES Student(Roll)
+);
