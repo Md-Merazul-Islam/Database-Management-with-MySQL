@@ -1,0 +1,17 @@
+CREATE DATABASE EMPLOYEELD;
+USE EMPLOYEELD;
+
+CREATE TABLE Employee (
+    EmployeeId INT ,
+    EmployeeName VARCHAR(20),
+    EmployeeSalary INT,
+    JoiningDate DATE
+);
+
+INSERT INTO Employee (JoiningDate)
+VALUES 
+    (  '2021-10-20'),
+    ( '2023-01-10');
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM Employee WHERE JoiningDate = '2021-10-20';
+SET SQL_SAFE_UPDATES = 1;
