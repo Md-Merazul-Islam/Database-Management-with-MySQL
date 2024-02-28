@@ -88,18 +88,70 @@ Courses Table:
 | 103       | Science         | Dr. Johnson|
 | 104       | History         | Prof. White|
 --------------------------------------------
-Primary Key Example:
-Students Table:
-- Primary Key: StudentID
+Primary Key : 
+The primary key constraint uniquely identifies each record in a table
+primary keys must contain Unique values, and cannot contain NULL values.
+A table can have only one primary key, and in the table, this primary key can consist of single or multiple columns(fields).
 
-Foreign Key Example:
-Courses Table:
-- Foreign Key: Instructor (references the Name column in Students Table)
 
-Index Key Example:
-Students Table:
-- Index Key: Name
 
+CREATE TABLE MERAZ(
+	Id INT NOT NULL,
+    Name VARCHAR(20),
+    Age INT,
+    CONSTRAINT PK_RULE PRIMARY KEY(Id)
+);
+
+
+
+Composition Primary Key :
+=> A Composition primary key is typically referred to as a cmbination of multiple columns that uniquely indentify each row in a database table. In a shorter from,you could simply call it a "composite key".
+
+
+
+Example : 
+----------------------------------------
+Student_ID	|Course_ID	|Enrollment_Date|
+101	        |CSCI101	|2023-09-05     |
+102	        |MATH201	|2023-09-10     |
+103	        |CSCI101	|2023-09-10     |
+101	        |MATH201	|2023-09-12     |
+-----------------------------------------
+
+-- Composition key --
+CREATE TABLE Student(
+	Student_Id INT NOT NULL,
+    Student_Name VARCHAR(20),
+    Course VARCHAR(20),
+    CONSTRAINT CM_PK PRIMARY KEY (Student_Name,Course)
+);
+
+INSERT INTO Student(Student_Id, Student_Name,Course )
+VALUES (1001,'AKASH','DSA'),
+		(1003,'RAJIB','CST'),
+        (1002,'ROKTIM','ALGO'),
+        (1004,'KASFIA','DP');
+        
+        
+
+Foreign key :
+if use a filed in a table , if this filed are another table primary key or feild then this filed e Foreign key .
+
+
+-- Foreing Key--departmentPRIMARY
+CREATE TABLE Department(
+	Det_id  INT PRIMARY KEY,
+    Det_Name VARCHAR(50)
+);
+
+CREATE TABLE Student(
+	Student_Id INT NOT NULL,
+    Student_Name VARCHAR(20),
+    Course VARCHAR(20),
+    Det_S_id INT,
+    
+    CONSTRAINT FK_Key FOREIGN KEY (Det_S_id) REFERENCES  Department(Det_id)
+);
 One-to-One (একে এক):
 
 একে এক রিলেশনশিপে, একটি রো একটি অপরটির সাথে মাত্র একটি সম্পর্ক রেখে।
