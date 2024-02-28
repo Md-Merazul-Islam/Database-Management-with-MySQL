@@ -221,5 +221,16 @@ SET SQL_SAFE_UPDATES =1;
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/32f8fcce-5e0d-4a46-88ec-31f98445a340)
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/75999a82-7bd4-4d9f-88af-973e4d8cd30d)
 
+## find character from a sentance:
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/2088dc8f-de02-492c-bacd-3e2fa1f89c02)
+
+## Logical Operation :
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/07783dbf-61fe-4d12-9871-1b16dd9f0ec9)
+
+## Sort :
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/8d7d9f81-d12f-42b3-8537-3baad2a24ea3)
+
+##Disticnct :
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/d849607d-727c-4bcc-a1a5-1b88411fd872)
 
 
