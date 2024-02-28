@@ -210,9 +210,7 @@ DELETE FROM student
 WHERE Roll = 2;                                                                
 SET SQL_SAFE_UPDATES =1;                                                        
 
-
-![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/372c1f71-f0d5-4ffe-a71e-666a5cadc215)
-
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/5430b61f-6085-4f1b-85ed-14353ef3038e)
 
 
 
