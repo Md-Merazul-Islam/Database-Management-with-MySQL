@@ -230,7 +230,10 @@ SET SQL_SAFE_UPDATES =1;
 ## Sort :
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/8d7d9f81-d12f-42b3-8537-3baad2a24ea3)
 
-##Disticnct :
+## Disticnct :
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/d849607d-727c-4bcc-a1a5-1b88411fd872)
+
+## As:
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/76d949ec-2151-46c8-8c4f-fb1d8f8f0d9d)
 
 
