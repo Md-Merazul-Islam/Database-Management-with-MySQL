@@ -24,21 +24,21 @@ EmployeeID	FirstName	LastName	Department	    Position	       Salary     <-record
                                         
 In this example:
 
-The table is named "Employees".
-Each row represents a record, which contains information about a single employee.
-Each column represents a field, such as EmployeeID, FirstName, LastName, Department, Position, and Salary.
-The values in each row correspond to the specific attributes of each employee, such as their ID, name, department, position, and salary.
+* The table is named "Employees".
+* Each row represents a record, which contains information about a single employee.
+* Each column represents a field, such as EmployeeID, FirstName, LastName, Department, Position, and Salary.
+* The values in each row correspond to the specific attributes of each employee, such as their ID, name, department, position, and salary.
 
 
 
-DBMS & RDBMS: 
+* DBMS & RDBMS: 
 
 ডাটাবেস ম্যানেজমেন্ট সিস্টেম (DBMS) এবং রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (RDBMS) উভয়ই ডাটাবেস সংজ্ঞার সাথে সম্পর্কিত। 
 DBMS হল এমন একটি সফটওয়্যার যা ডাটাবেস সংরক্ষণ, বিশ্লেষণ, বিন্যাস, অ্যাক্সেস এবং নিয়ন্ত্রণ করতে সাহায্য করে। 
 RDBMS হল একটি বিশেষ ধরণের DBMS যা ডাটা রিলেশনাল মডেল অনুযায়ী ব্যবস্থাপনা করে। 
 
 
-Key & primary key: 
+* Key & primary key: 
 
 "Key" শব্দটি ডেটাবেসে ব্যবহৃত হলে এটি প্রাথমিকভাবে একটি অনুসন্ধানের স্থান নির্দেশ করে যা ডেটাবেস সার্চ করার সময় ব্যবহৃত হয়। ডেটাবেস টেবিলে একটি ক্লাস্টার বা রো নির্দেশিত করার জন্য এটি অদ্ভুতপূর্ব আদর্শ নির্দেশিকা। এটি একটি সিন্থ্যাক্সে একত্রিত কলাম সেট সনাক্ত করে যা টেবিলের ইনফরমেশন বা ডেটা সম্পর্কে সম্পূর্ণ অনুসন্ধান বা প্রদর্শন করার জন্য ব্যবহৃত হয়। প্রধানত তিনটি ধরণের কী আছে:
 
@@ -158,11 +158,11 @@ Enrollment Table:
 
 Query -এটা হলো এমন একটা কাজ, যেটা আমরা ডাটাবেজে ডাটা খোজার জন্য করে থাকি। কোয়েরি এর মাধ্যমে আমরা ডাটার বিভিন্ন পরিবর্তন করতে পারি. যেমন: ubdate ,delete,add ইত্যাদি করতে পারি .
 
-SELECT Query ঃ এটা শুধু ডাটা নিয়ে আসে ।
-Parameter Query ঃ প্যারাম টা ইউজ করে খুঁজে নিয়ে আসে ডাটাকে।
-CrossTab query ঃ যে ধরনের কোয়ারি ডাটাকে গ্রুপ বা সামারি আকারে প্রকাশ করে তাকে বলে
-Unmatch : যেগুলো ম্যাচ করবে না সেইরকম ডাটা দেখাবে এই query
-Action : ডাটা বেজে টেবিল ক্রিয়েট, আপডেট,ডিলিট, অ্যাপেন্ট ইত্যাদি কাজ করার জন্যই  ব্যবহার করা হয়.
+* SELECT Query ঃ এটা শুধু ডাটা নিয়ে আসে ।
+* Parameter Query ঃ প্যারাম টা ইউজ করে খুঁজে নিয়ে আসে ডাটাকে।
+* CrossTab query ঃ যে ধরনের কোয়ারি ডাটাকে গ্রুপ বা সামারি আকারে প্রকাশ করে তাকে বলে
+* Unmatch : যেগুলো ম্যাচ করবে না সেইরকম ডাটা দেখাবে এই query
+* Action : ডাটা বেজে টেবিল ক্রিয়েট, আপডেট,ডিলিট, অ্যাপেন্ট ইত্যাদি কাজ করার জন্যই  ব্যবহার করা হয়.
 
 
 DML- select,insert,ubdate,delete এই কাজ গুলাকেই DML বলে।
@@ -220,13 +220,16 @@ SET SQL_SAFE_UPDATES =1;
 # Like , Offset ;
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/89ca56a4-4da1-4760-afb0-4852e54e65a6)
 
-#Group By:
+# Group By:
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/d7c855d2-6682-4e27-97d4-18e43c3d5085)
 
 
-#Where :
+# SQL WHERE  :
 if condition about table then use Where .
-#Having:
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/49e7c4c7-50de-4b23-b3c3-2a75696630b2)
+
+
+# Having:
 If group fucntion has any condition then having.
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/c36a49cb-3d73-43db-8770-efa35c2f89ab)
 
