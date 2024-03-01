@@ -1,5 +1,6 @@
 # Database-Management-with-MySQL
 
+ click [dummyed database code](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/blob/main/05%20Module/dummyed_data.sql)
 
 
 Data: ডেটা হল  অর্থহীন তথ্য যা সংগ্রহে অনুপাতিকভাবে সংগ্রহিত হয়েছে। এটি অপরিষ্কার অবস্থায় থাকে এবং সাধারণভাবে যে কোন ধরণের তথ্য থাকতে পারে, যেমন সংখ্যা, টেক্সট, ছবি, অডিও বা ভিডিও। ডেটা তথ্য এমন সাধারণ প্রকারের ব্যবহারের জন্য ব্যবহৃত হয়, যেখানে কোনও সুস্থিত অর্থনৈতিক বা মৌলিক অবস্থার সাথে যুক্তি বা কোনও মানসিকতা নেই।
