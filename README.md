@@ -221,13 +221,18 @@ SET SQL_SAFE_UPDATES =1;
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/89ca56a4-4da1-4760-afb0-4852e54e65a6)
 
 #Group By:
-![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/9a9593d8-b389-49de-a503-c6d827ad2bfa)
-![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/e47a1dd8-2bad-434d-a673-6432bac417a9)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/d7c855d2-6682-4e27-97d4-18e43c3d5085)
+
 
 #Where :
 if condition about table then use Where .
 #Having:
 If group fucntion has any condition then having.
-![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/1164c4af-1e43-42f9-b240-50c2273e0d30)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/c36a49cb-3d73-43db-8770-efa35c2f89ab)
+
+# ALTER TABLE ( ADD Column,DROP COLUMN,RENAME COLUMN,ALTER/MODIFY DATATYPE etc)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/3cdb0656-0dc4-4cf2-bcf7-58b1020100ac)
+
+
 
 
