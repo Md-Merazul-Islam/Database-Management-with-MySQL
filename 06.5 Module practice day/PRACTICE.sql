@@ -60,7 +60,7 @@ WHERE hire_date > (
     LIMIT 1
 )
 ORDER BY hire_date ASC
-LIMIT 1;
+
 
 
 
@@ -79,7 +79,7 @@ WHERE SALARY_RANK_DESC=3
  LIMIT 1;
 
 
---  the third lowest salary 3D SALARY 
+--  the third lowest salary 
 WITH RANK_SALARY AS(
  SELECT FIRST_NAME, SALARY ,
  (SELECT COUNT(DISTINCT(SALARY)) FROM EMPLOYEES E2 WHERE E2.SALARY < E1.SALARY)+1 AS SALARY_RANK_ASC 
