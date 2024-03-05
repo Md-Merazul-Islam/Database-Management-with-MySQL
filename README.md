@@ -237,6 +237,6 @@ If group fucntion has any condition then having.
 # ALTER TABLE ( ADD Column,DROP COLUMN,RENAME COLUMN,ALTER/MODIFY DATATYPE etc)
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/3cdb0656-0dc4-4cf2-bcf7-58b1020100ac)
 
-
-
-
+# [Join](https://www.w3schools.com/sql/sql_join.asp) : 
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/34ca1f78-81d5-451d-b3b1-c675e8025812)
+![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/cb5cacf1-bc63-46de-ae5c-5631a96e7e65)
