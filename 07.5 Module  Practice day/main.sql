@@ -1,0 +1,54 @@
+SELECT * FROM EMPLOYEES;
+SELECT * FROM DEPARTMENTS;
+SELECT * FROM JOBS;
+
+-- Show the employee names and corresponding job_titles without using JOIN query
+
+SELECT EMPLOYEES.FIRST_NAME, JOBS.JOB_TITLE
+FROM EMPLOYEES, JOBS 
+WHERE EMPLOYEES.JOB_ID = JOBS.JOB_ID;
+
+
+-- Do the question no 1 using JOIN query
+SELECT EMPLOYEES.FIRST_NAME, JOBS.JOB_TITLE
+FROM EMPLOYEES 
+JOIN JOBS
+ON EMPLOYEES.JOB_ID= JOBS.JOB_ID;
+
+-- Show the name of the employee and the job_title who receives the maximum salary
+-- way-1
+SELECT EMPLOYEES.FIRST_NAME ,JOBS.JOB_TITLE, EMPLOYEES.salary
+FROM EMPLOYEES
+JOIN JOBS
+ON EMPLOYEES.JOB_ID = JOBS.JOB_ID
+WHERE EMPLOYEES.salary = (
+    SELECT MAX(salary) FROM EMPLOYEES
+);
+
+-- way - 2
+
+WITH DITESILS AS(
+    SELECT 
+        EMPLOYEES.FIRST_NAME AS NAM,
+        JOBS.JOB_TITLE AS TI,
+        EMPLOYEES.salary AS ES
+    FROM EMPLOYEES 
+    JOIN JOBS
+    ON EMPLOYEES.JOB_ID= JOBS.JOB_ID
+)
+
+SELECT 
+    NAM,
+    TI,
+    ES
+    FROM DITESILS 
+    WHERE ES=(SELECT MAX(salary) FROM EMPLOYEES);
+
+
+
+-- Show the list of employee name and corresponding manager names.
+
+SELECT M.FIRST_NAME AS MANAGER , E.FIRST_NAME AS EMPLOYEES
+FROM EMPLOYEES AS E 
+JOIN EMPLOYEES AS M
+ON E.EMPLOYEE_ID = M.manager_ID;
