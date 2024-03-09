@@ -241,6 +241,6 @@ If group fucntion has any condition then having.
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/34ca1f78-81d5-451d-b3b1-c675e8025812)
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/cb5cacf1-bc63-46de-ae5c-5631a96e7e65)
 
-#[ERD Notations](https://gitmind.com/erd-examples.html) :
+# [ERD Notations](https://gitmind.com/erd-examples.html) :
 
 ![image](https://github.com/Md-Merazul-Islam/Database-Management-with-MySQL/assets/129538030/31cf6c9a-7b7e-4d23-971d-42a77275543c)
