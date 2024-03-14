@@ -1,6 +1,4 @@
 .cph/
 .vscode/
-*.txt
 *.exe
 *.bin
-*.pyc
