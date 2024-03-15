@@ -5,5 +5,4 @@ virtualenv my_environment
 
 .\my_environment\Scripts\Activate
 
- pip install pymysql
-
+pip install pymysql
