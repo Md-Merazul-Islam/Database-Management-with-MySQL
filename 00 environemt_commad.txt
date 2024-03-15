@@ -1,20 +1,8 @@
-<<<<<<< HEAD
+
 pip install virtualenv
 
 virtualenv my_environment
 
 .\my_environment\Scripts\Activate
 
- pip install mysql-connector-python
-
-=======
-pip install virtualenv
-
-virtualenv my_environment
-
-.\my_environment\Scripts\Activate
-
- pip install mysql-connector-python
-
->>>>>>> d54be1c5ca339fbcd1c05b6bd2079c5e67e6e7e5
-pip freeze > requirments.txt
+pip install pymysql
