@@ -5,5 +5,5 @@ virtualenv my_environment
 
 .\my_environment\Scripts\Activate
 
- pip install mysql-connector-python
+ pip install pymysql
 
