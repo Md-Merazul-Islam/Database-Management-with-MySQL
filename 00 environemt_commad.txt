@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 pip install virtualenv
 
 virtualenv my_environment
