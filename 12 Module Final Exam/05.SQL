@@ -1,0 +1,6 @@
+
+SELECT BK.Title
+FROM BOOK BK 
+JOIN Borrowing BR 
+ON BK.ISBN = BR.ISBN
+WHERE BR.ReturnDate < CURDATE();

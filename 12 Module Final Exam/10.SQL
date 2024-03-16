@@ -1,0 +1,2 @@
+
+The ERD topic fascinated me the most in the course. ERDs provide a visual representation of database structures, including entities, attributes, and relationships. They are crucial for understanding complex data relationships and facilitating communication among stakeholders during database design.
